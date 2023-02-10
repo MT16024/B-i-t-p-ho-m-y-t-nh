@@ -8,8 +8,7 @@ void initGL()
 	glOrtho(-320,320,-240,240,-1,1);	
 }
 
-void MidLine(int x1,int y1,int x2,int y2)   
-	//m>1
+void MidLine(int x1,int y1,int x2,int y2)   //m>1
 {
      int y_max,x,y;
      int dx=fabs(x1-x2);
@@ -37,6 +36,7 @@ void MidLine(int x1,int y1,int x2,int y2)
     }
     glEnd();   
 }
+
  void mydisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -45,6 +45,7 @@ void MidLine(int x1,int y1,int x2,int y2)
     glViewport(0,0,640,480);
     glFlush();
 }
+
 int main(int argc, char** argv){
     int mode=GLUT_SINGLE | GLUT_RGB;
     glutInitDisplayMode(mode);
