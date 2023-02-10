@@ -40,7 +40,7 @@ void MidLine(int x1,int y1,int x2,int y2)
  void mydisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0, 0.0, 0.0);  // ==> Red
+    glColor3f(1.0, 0.0, 0.0);  
     MidLine(10, 10, 200, 100);
     glViewport(0,0,640,480);
     glFlush();
@@ -50,8 +50,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(mode);
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("DEMO THUAT TOAN VE DOAN THANG");
-     
+    glutCreateWindow("Demo doan thang");
     initGL();  
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
