@@ -7,8 +7,9 @@ void initGL()
 	glClearColor(1.0f, 1.0f, 1.0f, 1.0f); 
 	glOrtho(-320,320,-240,240,-1,1);	
 }
+
 void MidLine(int x1,int y1,int x2,int y2)   
-//he so goc m>1
+	//m>1
 {
      int y_max,x,y;
      int dx=fabs(x1-x2);
