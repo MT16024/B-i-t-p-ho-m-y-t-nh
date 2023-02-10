@@ -44,7 +44,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(mode);
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("DEMO THUAT TOAN VE DOAN THANG");
+    glutCreateWindow("Demo doan thang");
     initGL();  
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
