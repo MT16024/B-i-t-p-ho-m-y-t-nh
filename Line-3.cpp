@@ -8,8 +8,7 @@ void initGL()
 	glOrtho(-320,320,-240,240,-1,1);	
 }
 
-void BreLine(int x1, int y1, int x2, int y2)
-	//x1=x2
+void BreLine(int x1, int y1, int x2, int y2)	//x1=x2
 {
     int y_min, y_max;
     if (y1 > y2) {
@@ -27,7 +26,7 @@ void BreLine(int x1, int y1, int x2, int y2)
     glEnd();
 }
 
-     void mydisplay()
+void mydisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(1.0, 0.0, 0.0);  
@@ -35,13 +34,13 @@ void BreLine(int x1, int y1, int x2, int y2)
     glViewport(0,0,640,480);
     glFlush();
 }
+
 int main(int argc, char** argv){
     int mode=GLUT_SINGLE | GLUT_RGB;
     glutInitDisplayMode(mode);
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("DEMO THUAT TOAN VE DOAN THANG");
-     
     initGL();  
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
