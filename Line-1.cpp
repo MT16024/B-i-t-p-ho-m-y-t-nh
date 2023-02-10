@@ -15,7 +15,6 @@ void BreLine(int x1,int y1,int x2,int y2)
      int dx=fabs(x1-x2);
      int dy=fabs(y1-y2);
      int p=2*dy-dx;
-     //Chon diem xuat phat
     if (x1>x2)
      {
          x=x2; y=y2; x_max=x1;
@@ -59,3 +58,4 @@ int main(int argc, char** argv){
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
 }
+
