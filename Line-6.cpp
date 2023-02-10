@@ -1,6 +1,6 @@
 #include <GL/glut.h>
 #include <cmath>
-#include <
+#include <algorithm>
 
 void initGL()
 {
