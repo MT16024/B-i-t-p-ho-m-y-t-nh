@@ -30,9 +30,8 @@ void BreLine(int x1, int y1, int x2, int y2)
      void mydisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0, 0.0, 0.0);  // ==> Red
+    glColor3f(1.0, 0.0, 0.0); 
     BreLine(10, 10, 200, 100);
-//    MidLine(10, 10, 200, 100);
     glViewport(0,0,640,480);
     glFlush();
 }
