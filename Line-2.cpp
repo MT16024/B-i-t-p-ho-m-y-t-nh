@@ -8,8 +8,7 @@ void initGL()
 	glOrtho(-320,320,-240,240,-1,1);	
 }
 
-void BreLine(int x1, int y1, int x2, int y2)
-	//y1=y2
+void BreLine(int x1, int y1, int x2, int y2)	//y1=y2
 {
     int x_min, x_max;
     if (x1 > x2) 
@@ -46,7 +45,6 @@ int main(int argc, char** argv){
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("DEMO THUAT TOAN VE DOAN THANG");
-     
     initGL();  
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
