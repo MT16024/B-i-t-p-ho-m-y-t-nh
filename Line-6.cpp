@@ -36,6 +36,7 @@ void BreLine(int x1,int y1,int x2,int y2)   //-1<m<0
     }
     glEnd();   
 }
+
 void mydisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -44,6 +45,7 @@ void mydisplay()
     glViewport(0,0,640,480);
     glFlush();
 }
+
 int main(int argc, char** argv){
     int mode=GLUT_SINGLE | GLUT_RGB;
     glutInitDisplayMode(mode);
