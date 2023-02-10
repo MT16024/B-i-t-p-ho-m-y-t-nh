@@ -11,7 +11,8 @@ void initGL()
 void BreLine(int x1, int y1, int x2, int y2)	//x1=x2
 {
     int y_min, y_max;
-    if (y1 > y2) {
+    if (y1 > y2) 
+    {
         y_min = y2;
         y_max = y1;
     }
@@ -20,7 +21,8 @@ void BreLine(int x1, int y1, int x2, int y2)	//x1=x2
         y_max = y2;
     }
     glBegin(GL_POINTS);
-    for (int y = y_min; y <= y_max; y++) {
+    for (int y = y_min; y <= y_max; y++) 
+    {
         glVertex2i(x1,y);
     }
     glEnd();
@@ -40,7 +42,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(mode);
     glutInitWindowSize(640, 480);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("DEMO THUAT TOAN VE DOAN THANG");
+    glutCreateWindow("Demo doan thang");
     initGL();  
     glutDisplayFunc(mydisplay);    
     glutMainLoop();
