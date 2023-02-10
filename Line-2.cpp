@@ -7,8 +7,9 @@ void initGL()
 	glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 	glOrtho(-320,320,-240,240,-1,1);	
 }
+
 void BreLine(int x1, int y1, int x2, int y2)
-//truong hop y1=y2
+	//y1=y2
 {
     int x_min, x_max;
     if (x1 > x2) {
